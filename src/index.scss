@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// ------------------------------------------ fonts
+@font-face {
+  font-family: foundersGroteskL;
+  src: url(./fonts/TestFoundersGrotesk-Light-BF66175e9730f02.otf);
+}
+@font-face {
+  font-family: foundersGroteskR;
+  src: url(./fonts/TestFoundersGrotesk-Regular-BF66175e972ac1c.otf);
+}
+@font-face {
+  font-family: helveticaNeue;
+  src: url(./fonts/HelveticaNeue.ttc);
+}
+// ------------------------------------------ mixins
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexRow {
+}
