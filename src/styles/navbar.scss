@@ -1,0 +1,24 @@
+@import "../index.scss";
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 13vh;
+  @include flexRowCenter;
+  justify-content: center;
+  &__iconsWrapper {
+    width: 100%;
+    height: 100%;
+    @include flexRowCenter;
+    justify-content: space-between;
+    padding: 0rem 4rem;
+    &__leftArrowIcon {
+    }
+    &__smileIcon {
+      img {
+        width: 40px;
+      }
+    }
+  }
+}

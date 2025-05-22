@@ -17,11 +17,15 @@
   src: url(./fonts/HelveticaNeue.ttc);
 }
 // ------------------------------------------ mixins
-@mixin flexCol {
+@mixin flexColCenter {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-@mixin flexRow {
+@mixin flexRowCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
