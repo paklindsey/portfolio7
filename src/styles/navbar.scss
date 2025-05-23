@@ -44,7 +44,12 @@
         width: 15px;
         border-radius: 10px;
         background-color: #fff;
-        // cursor: url(../images/cursorAbout.svg), auto;
+      }
+      &__dotActive {
+        height: 15px;
+        width: 15px;
+        border-radius: 10px;
+        background-color: #838383;
       }
     }
   }
