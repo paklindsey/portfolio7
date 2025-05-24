@@ -13,7 +13,25 @@
     @include flexRowCenter;
     justify-content: space-between;
     padding: 0rem 4rem;
-    &__leftArrowIcon {
+    &__arrowLeft {
+      @media screen and (max-width: 1000px) {
+        width: 52px;
+      }
+      img {
+        @media screen and (max-width: 1000px) {
+          width: 52px;
+        }
+      }
+    }
+    &__arrowRight {
+      @media screen and (max-width: 1000px) {
+        width: 52px;
+      }
+      img {
+        @media screen and (max-width: 1000px) {
+          width: 52px;
+        }
+      }
     }
     &__smileIcon {
       img {

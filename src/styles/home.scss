@@ -2,12 +2,19 @@
 
 .home {
   padding: 4rem 8rem;
+  @media screen and (max-width: 1000px) {
+    padding: 2rem 2rem;
+  }
   &__text {
     &__name {
       font-family: foundersGroteskL;
       font-size: 200px;
       line-height: 220px;
       text-transform: uppercase;
+      @media screen and (max-width: 1000px) {
+        font-size: 150px;
+        line-height: 150px;
+      }
       p {
         margin: 0;
         padding: 0;

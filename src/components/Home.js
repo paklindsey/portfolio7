@@ -1,8 +1,15 @@
 import "../styles/home.scss";
+import { motion, AnimatePresence } from "motion/react";
 
 const Home = () => {
   return (
-    <div className="home">
+    <motion.div
+      className="home"
+      initial={{ x: "100%" }}
+      animate={{ x: 0 }}
+      exit={{ x: "-100%" }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="home__text">
         <div className="home__text__name">
           <p>Lind</p>
@@ -16,7 +23,7 @@ const Home = () => {
           <p>product manager</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
