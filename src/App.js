@@ -12,8 +12,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.key}>
+          {console.log(location)}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Work />} />

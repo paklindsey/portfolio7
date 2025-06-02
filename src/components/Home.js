@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <motion.div
       className="home"
-      initial={{ x: "100%" }}
-      animate={{ x: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       exit={{ x: "-100%" }}
       transition={{ duration: 0.5 }}
     >
