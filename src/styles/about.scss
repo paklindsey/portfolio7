@@ -39,7 +39,10 @@
     &__vp2 {
       width: 100vw;
       height: 100vh;
-      background-color: blue;
+      @include flexRowCenter;
+      &__text {
+        width: 50%;
+      }
     }
     &__vp3 {
       width: 100vw;
