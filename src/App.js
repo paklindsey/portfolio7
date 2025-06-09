@@ -12,15 +12,15 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <AnimatePresence exitBeforeEnter>
-        <Routes location={location} key={location.key}>
-          {console.log(location)}
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </AnimatePresence>
+      {/* <AnimatePresence> */}
+      <Routes location={location} key={location.key} mode="popLayout">
+        {console.log(location)}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      {/* </AnimatePresence> */}
     </div>
   );
 }

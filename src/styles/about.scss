@@ -1,10 +1,11 @@
 @import "../index.scss";
 
 .about {
-  height: 300vh;
+  height: 200vh;
+
   position: relative;
   &__scrollWrapper {
-    width: 300vw;
+    width: 200vw;
     @include flexRowCenter;
     position: sticky;
     top: 0;
@@ -39,9 +40,13 @@
     &__vp2 {
       width: 100vw;
       height: 100vh;
-      @include flexRowCenter;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
       &__text {
-        width: 50%;
+        width: 40%;
+        padding: 0 4rem;
       }
     }
     &__vp3 {
